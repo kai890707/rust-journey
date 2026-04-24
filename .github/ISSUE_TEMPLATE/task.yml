@@ -1,0 +1,47 @@
+name: Learning Task
+description: A specific learning task (reading, coding, writing, etc.)
+title: "[Wnn] "
+labels: ["task"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Task type
+      options:
+        - read
+        - drill (Rustlings / exercises)
+        - code
+        - write
+        - challenge
+        - ship
+        - share
+        - plan
+        - setup
+        - community
+    validations:
+      required: true
+  - type: input
+    id: week
+    attributes:
+      label: Week
+      description: e.g. W01, W05
+      placeholder: "W01"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to happen
+      description: Describe the concrete task
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: How do I know this is complete?
+  - type: input
+    id: estimate
+    attributes:
+      label: Time estimate (hours)
+      placeholder: "1.5"

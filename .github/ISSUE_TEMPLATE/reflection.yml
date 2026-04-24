@@ -1,0 +1,21 @@
+name: Weekly Reflection
+description: End-of-week retrospective (closes when week is done)
+title: "[Week nn] Retrospective"
+labels: ["reflection"]
+body:
+  - type: textarea
+    id: clicked
+    attributes:
+      label: What clicked
+  - type: textarea
+    id: hard
+    attributes:
+      label: What was hard
+  - type: textarea
+    id: insight
+    attributes:
+      label: Java ↔ Rust insight
+  - type: textarea
+    id: next
+    attributes:
+      label: Adjustments for next week
